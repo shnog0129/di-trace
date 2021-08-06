@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="448px" height="512px" viewBox="0 0 448 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>bell-temp</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bell-temp" fill="#CBCACE" fill-rule="nonzero">
+            <path d="M224,512 C259.32,512 287.97,483.35 287.97,448 L160.03,448 C160.03,483.35 188.68,512 224,512 Z M439.39,362.29 C420.07,341.53 383.92,310.3 383.92,208 C383.92,130.3 329.44,68.1 255.98,52.84 L255.98,32 C255.98,14.33 241.66,0 224,0 C206.34,0 192.02,14.33 192.02,32 L192.02,52.84 C118.56,68.1 64.08,130.3 64.08,208 C64.08,310.3 27.93,341.53 8.61,362.29 C2.61,368.74 -0.05,376.45 -0.000691388114,384 C0.11,400.4 12.98,416 32.1,416 L415.9,416 C435.02,416 447.9,400.4 448.000691,384 C448.05,376.45 445.39,368.73 439.39,362.29 L439.39,362.29 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

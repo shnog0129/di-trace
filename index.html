@@ -8,6 +8,8 @@
   <!-- <title>Dot Install - 3min way to tech masterclass</title> -->
   <title>Trace-ドットインストール - 3分動画でマスターできるプログラミング学習サービス</title>
   <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
   <!-- JavaScript -->
   <!-- <script src="script.js"></script> For JavaScript file. -->
   <script src="./scripts/script.js"></script>
@@ -22,32 +24,65 @@
 </head>
 
 <header> 
-  <div class="header_wrapper">
+  <section class="header_wrapper">
     <div class="header_container">
-      <div class="header_logo">
-        <img src="./resources/icons/temp-topbar_logo.png" alt="Dot Install Logo">
-      </div>
+      <a href="">
+        <div class="header_logo">
+          <img src="./resources/icons/temp-topbar_logo.png" alt="Dot Install Logo">
+        </div>
+      </a>
+      
       <div class="header_nav-menu"> 
         <ul class="header_nav-menu">
           <li>マイページ</li>
           <li>レッスン一覧</li>
-          <li>プレミアム会員</li>
-          <li> 法人でのご利用</li>
+          <li id="hide990"><span id="premium">プレミアム会員</span></li>
+          <li id="hide1101"> 法人でのご利用</li>
         </ul>
       </div>
+      
       <div class="header_searchbar">
         <input type="text" placeholder="ソースコード、レッスンを検索"><button class="searchbar-btn"></button>
       </div>
       
-      <div class="header_user-info">
+            
+      <div class="header_user-info"> 
+        <div class="header_msg">
+          <img src="resources/fontawesome/svgs/solid/comments-temp.svg">
+        </div>
+        
+        <div class="header_notification">
+          <img src="resources/fontawesome/svgs/solid/bell-temp.svg">
+        </div>
+        <div class="header_user">
+          <div class="header_user-frame">
+            <img src="resources/fontawesome/svgs/solid/user.svg">          
+          </div>  
+        </div>
+        <div class="header_pulldown">
+          <span class="triangle"></span>
+          <div class="dropdown">
+            <ul class="dropdown-list">
+              <li><a href="#">マイページ</a></li>
+              <li><a href="#">プレミアム会員</a></li>
+              <li><a href="#">法人でのご利用</a></li>
+              <hr id="dropdown-hr">
+              <li><a href="#">プロフィール</a></li>
+              <li><a href="#">設定変更</a></li>
+              <li><a href="#">ヘルプ</a></li>
+              <hr id="dropdown-hr">
+              <li><a href="#">ログアウト</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 </header>
 
 
 <body>
-  <div class="cover_wrapper">
+  <section class="cover_wrapper">
     <div class="cover_container">
       <div class="cover_contents">
         <div class="cover_contents-top">
@@ -65,141 +100,144 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
     
     
   </div>
   
-  <div class="popular-list_wrapper">
-    <div class="popular-list_title">
-      <p>人気のレッスン</p>
-    </div>
-
-    <div class="popular-list_lessons">
-
-      <div class="lesson">
-        <div class="lesson_icon">
-          <img src="./resources/icons/lesson_icon.png" alt="Lesson-A">
+  <section class="popular-list_wrapper">
+    <div class="popular-list_container">
+      <div class="popular-list_title">
+        <p>人気のレッスン</p>
+      </div>
+  
+      <div class="popular-list_lessons">
+  
+        <div class="lesson">
+          <div class="lesson_icon">
+            <img src="./resources/icons/lesson_icon.png" alt="Lesson-A">
+          </div>
+          <div class="lesson_txt">
+            <a href="" class="lesson_title">実践！アプリ紹介ページを作ろう <span class="weaken">(全16回)</span></a>
+            <p class="lesson_desc">スマートフォン画面にも対応したアプリ紹介ページを制作しながら、HTML/CSSの実践的なテクニックを学んでいきます。</p>
+          </div>
         </div>
-        <div class="lesson_txt">
-          <a href="" class="lesson_title">実践！アプリ紹介ページを作ろう <span class="weaken">(全16回)</span></a>
-          <p class="lesson_desc">スマートフォン画面にも対応したアプリ紹介ページを制作しながら、HTML/CSSの実践的なテクニックを学んでいきます。</p>
+  
+        <div class="lesson">
+          <div class="lesson_icon">
+            <img src="./resources/icons/lesson_icon.png" alt="Lesson-A">
+          </div>
+          <div class="lesson_txt">
+            <a href="" class="lesson_title">実践！アプリ紹介ページを作ろう <span class="weaken">(全16回)</span></a>
+            <p class="lesson_desc">スマートフォン画面にも対応したアプリ紹介ページを制作しながら、HTML/CSSの実践的なテクニックを学んでいきます。</p>
+          </div>
+        </div>
+        <div class="lesson">
+          <div class="lesson_icon">
+            <img src="./resources/icons/lesson_icon.png" alt="Lesson-A">
+          </div>
+          <div class="lesson_txt">
+            <a href="" class="lesson_title">実践！アプリ紹介ページを作ろう <span class="weaken">(全16回)</span></a>
+            <p class="lesson_desc">スマートフォン画面にも対応したアプリ紹介ページを制作しながら、HTML/CSSの実践的なテクニックを学んでいきます。</p>
+          </div>
+        </div>
+        <div class="lesson">
+          <div class="lesson_icon">
+            <img src="./resources/icons/lesson_icon.png" alt="Lesson-A">
+          </div>
+          <div class="lesson_txt">
+            <a href="" class="lesson_title">実践！アプリ紹介ページを作ろう <span class="weaken">(全16回)</span></a>
+            <p class="lesson_desc">スマートフォン画面にも対応したアプリ紹介ページを制作しながら、HTML/CSSの実践的なテクニックを学んでいきます。</p>
+          </div>
+        </div>
+        <div class="lesson">
+          <div class="lesson_icon">
+            <img src="./resources/icons/lesson_icon.png" alt="Lesson-A">
+          </div>
+          <div class="lesson_txt">
+            <a href="" class="lesson_title">実践！アプリ紹介ページを作ろう <span class="weaken">(全16回)</span></a>
+            <p class="lesson_desc">スマートフォン画面にも対応したアプリ紹介ページを制作しながら、HTML/CSSの実践的なテクニックを学んでいきます。</p>
+          </div>
+        </div>
+        <div class="lesson">
+          <div class="lesson_icon">
+            <img src="./resources/icons/lesson_icon.png" alt="Lesson-A">
+          </div>
+          <div class="lesson_txt">
+            <a href="" class="lesson_title">実践！アプリ紹介ページを作ろう <span class="weaken">(全16回)</span></a>
+            <p class="lesson_desc">スマートフォン画面にも対応したアプリ紹介ページを制作しながら、HTML/CSSの実践的なテクニックを学んでいきます。</p>
+          </div>
         </div>
       </div>
-      <div class="lesson">
-        <div class="lesson_icon">
-          <img src="./resources/icons/lesson_icon.png" alt="Lesson-A">
-        </div>
-        <div class="lesson_txt">
-          <a href="" class="lesson_title">実践！アプリ紹介ページを作ろう <span class="weaken">(全16回)</span></a>
-          <p class="lesson_desc">スマートフォン画面にも対応したアプリ紹介ページを制作しながら、HTML/CSSの実践的なテクニックを学んでいきます。</p>
-        </div>
-      </div>
-      <div class="lesson">
-        <div class="lesson_icon">
-          <img src="./resources/icons/lesson_icon.png" alt="Lesson-A">
-        </div>
-        <div class="lesson_txt">
-          <a href="" class="lesson_title">実践！アプリ紹介ページを作ろう <span class="weaken">(全16回)</span></a>
-          <p class="lesson_desc">スマートフォン画面にも対応したアプリ紹介ページを制作しながら、HTML/CSSの実践的なテクニックを学んでいきます。</p>
-        </div>
-      </div>
-      <div class="lesson">
-        <div class="lesson_icon">
-          <img src="./resources/icons/lesson_icon.png" alt="Lesson-A">
-        </div>
-        <div class="lesson_txt">
-          <a href="" class="lesson_title">実践！アプリ紹介ページを作ろう <span class="weaken">(全16回)</span></a>
-          <p class="lesson_desc">スマートフォン画面にも対応したアプリ紹介ページを制作しながら、HTML/CSSの実践的なテクニックを学んでいきます。</p>
-        </div>
-      </div>
-      <div class="lesson">
-        <div class="lesson_icon">
-          <img src="./resources/icons/lesson_icon.png" alt="Lesson-A">
-        </div>
-        <div class="lesson_txt">
-          <a href="" class="lesson_title">実践！アプリ紹介ページを作ろう <span class="weaken">(全16回)</span></a>
-          <p class="lesson_desc">スマートフォン画面にも対応したアプリ紹介ページを制作しながら、HTML/CSSの実践的なテクニックを学んでいきます。</p>
-        </div>
-      </div>
-      <div class="lesson">
-        <div class="lesson_icon">
-          <img src="./resources/icons/lesson_icon.png" alt="Lesson-A">
-        </div>
-        <div class="lesson_txt">
-          <a href="" class="lesson_title">実践！アプリ紹介ページを作ろう <span class="weaken">(全16回)</span></a>
-          <p class="lesson_desc">スマートフォン画面にも対応したアプリ紹介ページを制作しながら、HTML/CSSの実践的なテクニックを学んでいきます。</p>
-        </div>
-      </div>
-
     </div>
 
       <div class="popular-list_button btn">
         <p>すべてのレッスンを見る</p>
       </div>
-
-  </div>
+    </section>
 
   <section class="new-list_wrapper">
-    <div class="new-list_title">
-      <p>新着レッスン</p>
-    </div>
-
-    <div class="new-list_lessons">
-
-      <div class="lesson">
-        <div class="lesson_icon">
-          <img src="./resources/icons/lesson_icon.png" alt="Lesson-A">
-        </div>
-        <div class="lesson_txt">
-          <a href="" class="lesson_title">実践！アプリ紹介ページを作ろう <span class="weaken">(全16回)</span></a>
-          <p class="lesson_desc">スマートフォン画面にも対応したアプリ紹介ページを制作しながら、HTML/CSSの実践的なテクニックを学んでいきます。</p>
-        </div>
+    <div class="new-list_container">
+      <div class="new-list_title">
+        <p>新着レッスン</p>
       </div>
-      <div class="lesson">
-        <div class="lesson_icon">
-          <img src="./resources/icons/lesson_icon.png" alt="Lesson-A">
+  
+      <div class="new-list_lessons">
+  
+        <div class="lesson">
+          <div class="lesson_icon">
+            <img src="./resources/icons/lesson_icon.png" alt="Lesson-A">
+          </div>
+          <div class="lesson_txt">
+            <a href="" class="lesson_title">実践！アプリ紹介ページを作ろう <span class="weaken">(全16回)</span></a>
+            <p class="lesson_desc">スマートフォン画面にも対応したアプリ紹介ページを制作しながら、HTML/CSSの実践的なテクニックを学んでいきます。</p>
+          </div>
         </div>
-        <div class="lesson_txt">
-          <a href="" class="lesson_title">実践！アプリ紹介ページを作ろう <span class="weaken">(全16回)</span></a>
-          <p class="lesson_desc">スマートフォン画面にも対応したアプリ紹介ページを制作しながら、HTML/CSSの実践的なテクニックを学んでいきます。</p>
+        <div class="lesson">
+          <div class="lesson_icon">
+            <img src="./resources/icons/lesson_icon.png" alt="Lesson-A">
+          </div>
+          <div class="lesson_txt">
+            <a href="" class="lesson_title">実践！アプリ紹介ページを作ろう <span class="weaken">(全16回)</span></a>
+            <p class="lesson_desc">スマートフォン画面にも対応したアプリ紹介ページを制作しながら、HTML/CSSの実践的なテクニックを学んでいきます。</p>
+          </div>
         </div>
-      </div>
-      <div class="lesson">
-        <div class="lesson_icon">
-          <img src="./resources/icons/lesson_icon.png" alt="Lesson-A">
+        <div class="lesson">
+          <div class="lesson_icon">
+            <img src="./resources/icons/lesson_icon.png" alt="Lesson-A">
+          </div>
+          <div class="lesson_txt">
+            <a href="" class="lesson_title">実践！アプリ紹介ページを作ろう <span class="weaken">(全16回)</span></a>
+            <p class="lesson_desc">スマートフォン画面にも対応したアプリ紹介ページを制作しながら、HTML/CSSの実践的なテクニックを学んでいきます。</p>
+          </div>
         </div>
-        <div class="lesson_txt">
-          <a href="" class="lesson_title">実践！アプリ紹介ページを作ろう <span class="weaken">(全16回)</span></a>
-          <p class="lesson_desc">スマートフォン画面にも対応したアプリ紹介ページを制作しながら、HTML/CSSの実践的なテクニックを学んでいきます。</p>
+        <div class="lesson">
+          <div class="lesson_icon">
+            <img src="./resources/icons/lesson_icon.png" alt="Lesson-A">
+          </div>
+          <div class="lesson_txt">
+            <a href="" class="lesson_title">実践！アプリ紹介ページを作ろう <span class="weaken">(全16回)</span></a>
+            <p class="lesson_desc">スマートフォン画面にも対応したアプリ紹介ページを制作しながら、HTML/CSSの実践的なテクニックを学んでいきます。</p>
+          </div>
         </div>
-      </div>
-      <div class="lesson">
-        <div class="lesson_icon">
-          <img src="./resources/icons/lesson_icon.png" alt="Lesson-A">
+        <div class="lesson">
+          <div class="lesson_icon">
+            <img src="./resources/icons/lesson_icon.png" alt="Lesson-A">
+          </div>
+          <div class="lesson_txt">
+            <a href="" class="lesson_title">実践！アプリ紹介ページを作ろう <span class="weaken">(全16回)</span></a>
+            <p class="lesson_desc">スマートフォン画面にも対応したアプリ紹介ページを制作しながら、HTML/CSSの実践的なテクニックを学んでいきます。</p>
+          </div>
         </div>
-        <div class="lesson_txt">
-          <a href="" class="lesson_title">実践！アプリ紹介ページを作ろう <span class="weaken">(全16回)</span></a>
-          <p class="lesson_desc">スマートフォン画面にも対応したアプリ紹介ページを制作しながら、HTML/CSSの実践的なテクニックを学んでいきます。</p>
-        </div>
-      </div>
-      <div class="lesson">
-        <div class="lesson_icon">
-          <img src="./resources/icons/lesson_icon.png" alt="Lesson-A">
-        </div>
-        <div class="lesson_txt">
-          <a href="" class="lesson_title">実践！アプリ紹介ページを作ろう <span class="weaken">(全16回)</span></a>
-          <p class="lesson_desc">スマートフォン画面にも対応したアプリ紹介ページを制作しながら、HTML/CSSの実践的なテクニックを学んでいきます。</p>
-        </div>
-      </div>
-      <div class="lesson">
-        <div class="lesson_icon">
-          <img src="./resources/icons/lesson_icon.png" alt="Lesson-A">
-        </div>
-        <div class="lesson_txt">
-          <a href="" class="lesson_title">実践！アプリ紹介ページを作ろう <span class="weaken">(全16回)</span></a>
-          <p class="lesson_desc">スマートフォン画面にも対応したアプリ紹介ページを制作しながら、HTML/CSSの実践的なテクニックを学んでいきます。</p>
+        <div class="lesson">
+          <div class="lesson_icon">
+            <img src="./resources/icons/lesson_icon.png" alt="Lesson-A">
+          </div>
+          <div class="lesson_txt">
+            <a href="" class="lesson_title">実践！アプリ紹介ページを作ろう <span class="weaken">(全16回)</span></a>
+            <p class="lesson_desc">スマートフォン画面にも対応したアプリ紹介ページを制作しながら、HTML/CSSの実践的なテクニックを学んでいきます。</p>
+          </div>
         </div>
       </div>
       <div class="new-list_button btn">
@@ -226,44 +264,44 @@
         <div class="footer_list">
           <h3 class="emphasis">サービスメニュー</h3>
           <ul>
-            <li>レッスン一覧</li>
-            <li>プレミアム会員</li>
-            <li>法人向けライセンス</li>
-            <li>運営からのお知らせ</li>
-            <li>プログラミング学習ガイド</li>
-            <li>ヘルプ</li>
+            <li><a href="#">レッスン一覧</a></li>
+            <li><a href="#">プレミアム会員</a></li>
+            <li><a href="#">法人向けライセンス</a></li>
+            <li><a href="#">運営からのお知らせ</a></li>
+            <li><a href="#">プログラミング学習ガイド</a></li>
+            <li><a href="#">ヘルプ</a></li>
           </ul>
         </div>
     
         <div class="footer_list">
           <h3 class="emphasis">ご利用にあたって</h3>
           <ul>
-            <li>利用規約</li>
-            <li>プライバシーポリシー</li>
-            <li>運営企業情報</li>
-            <li>採用情報</li>
-            <li>教材利用について</li>
-            <li>お問い合わせ</li>
+            <li><a href="#">利用規約</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+            <li><a href="#">運営企業情報</a></li>
+            <li><a href="#">採用情報</a></li>
+            <li><a href="#">教材利用について</a></li>
+            <li><a href="#">お問い合わせ</a></li>
           </ul>
         </div>
     
         <div class="footer_list">
           <h3 class="emphasis">学習支援ツール</h3>
           <ul>
-            <li>Dotinstall Pane</li>
+            <li><a href="#">Dotinstall Pane</a></li>
           </ul>
     
           <h3 class="emphasis">ソーシャルメディア</h3>
           <ul>
-            <li>Facebookページ</li>
-            <li>Twitter (@dotinstall)</li>
-            <li>公式ブログ</li>
+            <li><a href="#">Facebookページ</a></li>
+            <li><a href="#">Twitter (@dotinstall)</a></li>
+            <li><a href="#">公式ブログ</a></li>
           </ul>
           
           <h3 class="emphasis">更新情報</h3>
           <ul>
-            <li>新着レッスンRSS</li>
-            <li>新着補足情報RSS</li>
+            <li><a href="#">新着レッスンRSS</a></li>
+            <li><a href="#">新着補足情報RSS</a></li>
           </ul>
         </div>
       </div>
